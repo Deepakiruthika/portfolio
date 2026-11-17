@@ -79,7 +79,7 @@ export const Navbar: React.FC = () => {
               DEEPAKIRUTHIKA
             </span>
             <span className="text-[10px] font-mono text-accent-orange font-bold whitespace-nowrap">
-              / ECE
+              / CCE
             </span>
           </a>
 

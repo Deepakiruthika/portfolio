@@ -83,7 +83,7 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
               </span>
             </div>
             <div className="hidden sm:block uppercase tracking-wider text-[11px] text-gray-400">
-              ECE • IoT & EMBEDDED SYSTEMS
+              CCE • IoT & EMBEDDED SYSTEMS
             </div>
             <div className="text-[11px] font-mono text-gray-500 uppercase">
               STUDIO EDITION // 2026

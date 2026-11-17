@@ -8,15 +8,15 @@ export const Education: React.FC = () => {
   const educationItems = [
     {
       institution: 'V S B Engineering College',
-      degree: 'Undergraduate Engineering (B.E. in ECE)',
+      degree: 'Undergraduate Engineering (B.E. in CCE)',
       location: 'Karur, Tamil Nadu',
       period: 'September 2023 – Till Date',
       status: 'Current Program',
       isCurrent: true,
       description:
-        'Rigorous engineering curriculum focusing on electronics, communication principles, hardware interfacing, microcontrollers, and IoT architectures.',
+        'Rigorous engineering curriculum focusing on computer and communication systems, hardware interfacing, microcontrollers, and IoT architectures.',
       highlights: [
-        'Electronics and Communication Engineering core coursework',
+        'Computer and Communication Engineering (CCE) core coursework',
         'Hardware interfacing and multi-sensor circuits',
         'Embedded systems laboratory & prototype testing',
       ],

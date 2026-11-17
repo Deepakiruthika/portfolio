@@ -7,6 +7,7 @@ interface InteractiveTextProps {
   className?: string;
   hoverColor?: string;
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'span' | 'div';
+  wrap?: boolean;
 }
 
 export const InteractiveText: React.FC<InteractiveTextProps> = ({
@@ -14,12 +15,17 @@ export const InteractiveText: React.FC<InteractiveTextProps> = ({
   className = '',
   hoverColor = '#FF4D26',
   as: Component = 'span',
+  wrap = true,
 }) => {
-  // Split into words so words wrap naturally without breaking mid-word
+  // Split into words so words wrap naturally without breaking mid-word (if wrap is enabled)
   const words = text.split(' ');
 
   return (
-    <Component className={`inline-flex flex-wrap gap-x-[0.3em] ${className}`}>
+    <Component
+      className={`inline-flex ${
+        wrap ? 'flex-wrap' : 'flex-nowrap whitespace-nowrap'
+      } gap-x-[0.3em] ${className}`}
+    >
       {words.map((word, wIdx) => (
         <span key={wIdx} className="inline-flex whitespace-nowrap">
           {word.split('').map((char, cIdx) => (

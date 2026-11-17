@@ -51,7 +51,7 @@ export const About: React.FC = () => {
                     <span>Kangeyam, Tamil Nadu</span>
                   </div>
                   <span className="inline-block mt-2 text-[10px] font-mono px-2.5 py-0.5 rounded bg-black/[0.05] text-[#121212] font-semibold">
-                    B.E. ECE • V S B Engineering College
+                    B.E. CCE • V S B Engineering College
                   </span>
                 </div>
               </div>

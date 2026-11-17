@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Check, Copy, ArrowUpRight, ShieldCheck } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { sound } from '../utils/sound';
-import { InstagramIcon, TwitterIcon } from './SocialIcons';
 import { InteractiveText } from './InteractiveText';
 
 export const Contact: React.FC = () => {
@@ -158,29 +157,6 @@ export const Contact: React.FC = () => {
                 <div className="font-mono text-xs sm:text-sm font-semibold text-black">
                   Kangeyam, Tamil Nadu, India
                 </div>
-              </div>
-
-              {/* Social Channels (Strictly Confirmed in Resume) */}
-              <div className="pt-2 flex gap-3">
-                <a
-                  href="https://instagram.com/kiruthika2207"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white border border-black/10 text-xs font-mono font-semibold text-black hover:border-black transition-colors"
-                >
-                  <InstagramIcon className="w-4 h-4" />
-                  <span>@kiruthika2207</span>
-                </a>
-
-                <a
-                  href="https://twitter.com/kiruthika2207"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white border border-black/10 text-xs font-mono font-semibold text-black hover:border-black transition-colors"
-                >
-                  <TwitterIcon className="w-4 h-4" />
-                  <span>@kiruthika2207</span>
-                </a>
               </div>
 
             </div>

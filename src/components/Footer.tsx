@@ -23,18 +23,19 @@ export const Footer: React.FC = () => {
           <span className="w-1.5 h-1.5 rounded-full bg-accent-orange animate-pulse" />
         </div>
 
-        {/* Massive Kinetic Headline: DEEPAKIRUTHIKA T with Interactive Letter Stretch */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between pb-12 border-b border-white/[0.08] gap-8">
-          <div>
-            <h2 className="font-syne font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-white tracking-tighter leading-none">
+        {/* Massive Kinetic Headline: DEEPAKIRUTHIKA T with Interactive Letter Stretch (Single Line) */}
+        <div className="flex flex-col xl:flex-row xl:items-end justify-between pb-12 border-b border-white/[0.08] gap-8">
+          <div className="overflow-visible max-w-full">
+            <h2 className="font-syne font-black text-2xl sm:text-4xl md:text-5xl lg:text-[3.6rem] xl:text-[4.4rem] text-white tracking-tighter leading-none whitespace-nowrap">
               <InteractiveText
                 text="DEEPAKIRUTHIKA T"
                 hoverColor="#FF4D26"
+                wrap={false}
               />
             </h2>
-            <p className="text-xs sm:text-sm font-mono text-gray-400 mt-3 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>Engineering Student • IoT & Embedded Systems • Tamil Nadu, India</span>
+            <p className="text-xs sm:text-sm font-mono text-gray-400 mt-3 flex items-center gap-2 flex-wrap">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse flex-shrink-0" />
+              <span>Engineering Student • B.E. CCE • IoT & Embedded Systems • Tamil Nadu, India</span>
             </p>
           </div>
 
